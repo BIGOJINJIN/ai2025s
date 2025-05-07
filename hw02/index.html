@@ -20,8 +20,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 
   @font-face {
-    font-family:'CircleFont';
-    src: url(https://circle472.github.io/ct2022s/hw04/CircleFont_v2.woff2); 
+    font-family: 'MyCustomFont'; /* 新定義的字體名稱 */
+    src: url('112590021.ttf') format('truetype'); /* 指定你的字體檔案路徑，確保檔案在同一目錄，或調整路徑 */
+  }
+
+  body {
+    background-color: rgb(106, 76, 156); /* #6A4C9C */
+    color: rgb(106, 76, 156);
+    font-family: 'MyCustomFont', sans-serif; /* 改為使用你的字體，移除 Noto Sans JP，並將備用字體改為 sans-serif */
   }
 
   table {
